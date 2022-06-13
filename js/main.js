@@ -10,7 +10,7 @@
             max = temporaryValue;
         }
 
-        if (min == max) {
+        if (min === max) {
         throw Error ('Минимальное значение равно максимальному');
         }
         min = Math.ceil(min);
@@ -34,13 +34,13 @@ function getRandomNumber(min, max, numberAfterComma) {
                 max = temporaryValue;
             }
 
-            if (min == max) {
+            if (min === max) {
             throw Error ('Минимальное значение равно максимальному');
             }
 
             let result = Math.random() * (max - min) + min;
             return result.toFixed(numberAfterComma);
-            
+
         } else {
         throw Error ('Диапазон должен быть положительным');
         }
